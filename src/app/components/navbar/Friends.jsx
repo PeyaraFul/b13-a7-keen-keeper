@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-const data = await fetch("./friends.json");
+const data = await fetch("https://b13-a7-keen-keeper-nine.vercel.app/friends.json");
 const friends = await data.json();
 // console.log(friends) ;
 
