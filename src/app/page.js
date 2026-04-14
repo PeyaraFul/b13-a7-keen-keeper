@@ -5,7 +5,8 @@ import { GoClock } from "react-icons/go";
 import { RiHome2Line } from "react-icons/ri";
 
 export default function Home() {
-  return (
+  return ( 
+    <>
     <div className="flex flex-col flex-1 bg-zinc-50 font-sans dark:bg-black">
       
         
@@ -25,5 +26,8 @@ export default function Home() {
         
     
     </div>
+
+     main page
+   </>
   );
 }
