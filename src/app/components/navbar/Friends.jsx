@@ -1,12 +1,12 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
-const data = await fetch("https://b13-a7-keen-keeper-nine.vercel.app/friends.json");
-const friends = await data.json();
+
 // console.log(friends) ;
 
-const Friends = () => {
+const Friends = ({friends}) => {
 
     const statusBg = (status) => {
         if(status === 'overdue'){
@@ -25,10 +25,14 @@ const Friends = () => {
   return (
     <>
     <h1 className="text-md font-bold mt-10"> Your Friends</h1>
-    <div className="grid grid-cols-3 gap-6 my-4 mx-auto">
+
+     <div className="grid grid-cols-4 gap-6 my-4 mx-auto">
         
       {friends.map((friend, index) => (
-        <div className="card bg-base-100 w-96 shadow-sm border border-amber-600 rounded-2xl" key={index}>
+        
+        <Link key={index} href={`/${friend.id}`}>
+        
+        <div className="card bg-base-100 shadow-sm border border-amber-600 rounded-2xl" >
           <figure className="px-10 pt-10">
            <Image src={friend.picture} alt={friend.name} width='120' height='120' className="rounded-xl" />
           </figure>
@@ -48,8 +52,13 @@ const Friends = () => {
             
           </div>
         </div>
+        </Link>
+
       ))}
     </div>
+  
+
+
     </>
   );
 };

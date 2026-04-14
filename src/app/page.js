@@ -1,6 +1,9 @@
-import { IoIosAdd } from "react-icons/io";
+
 import { MdAdd } from "react-icons/md";
 import Friends from "./components/navbar/Friends";
+
+const data = await fetch("https://b13-a7-keen-keeper-nine.vercel.app/friends.json");
+const friends = await data.json();
 
 export default function Home() {
   return (
@@ -40,7 +43,7 @@ export default function Home() {
 
     
 
-    <Friends></Friends>
+    <Friends friends={friends}></Friends>
 
 
 
