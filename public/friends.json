@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "John Doe",
-    "picture": "https://randomuser.me/api/portraits/men/32.jpg",
+    "picture": "https://randomuser.me/api/portraits/lego/1.jpg",
     "email": "john.doe@example.com",
     "days_since_contact": 18,
     "status": "overdue",
@@ -14,7 +14,7 @@
   {
     "id": 2,
     "name": "Sarah Ahmed",
-    "picture": "https://randomuser.me/api/portraits/women/44.jpg",
+    "picture": "https://randomuser.me/api/portraits/lego/2.jpg",
     "email": "sarah.ahmed@example.com",
     "days_since_contact": 12,
     "status": "almost due",
@@ -26,7 +26,7 @@
   {
     "id": 3,
     "name": "Michael Chen",
-    "picture": "https://randomuser.me/api/portraits/men/51.jpg",
+    "picture": "https://randomuser.me/api/portraits/lego/3.jpg",
     "email": "michael.chen@example.com",
     "days_since_contact": 5,
     "status": "on-track",
@@ -38,7 +38,7 @@
   {
     "id": 4,
     "name": "Nusrat Jahan",
-    "picture": "https://randomuser.me/api/portraits/women/63.jpg",
+    "picture": "https://randomuser.me/api/portraits/lego/4.jpg",
     "email": "nusrat.jahan@example.com",
     "days_since_contact": 20,
     "status": "overdue",
@@ -50,11 +50,11 @@
   {
     "id": 5,
     "name": "David Rodriguez",
-    "picture": "https://randomuser.me/api/portraits/men/75.jpg",
+    "picture": "https://randomuser.me/api/portraits/lego/5.jpg",
     "email": "david.rodriguez@example.com",
     "days_since_contact": 9,
     "status": "almost due",
-    "tags": ["neighbor", "football"],
+    "tags": ["neighbor"],
     "bio": "Neighbor and weekend football partner who organizes our local community matches.",
     "goal": 10,
     "next_due_date": "2025-07-15"
@@ -62,7 +62,7 @@
   {
     "id": 6,
     "name": "Emily Parker",
-    "picture": "https://randomuser.me/api/portraits/women/28.jpg",
+    "picture": "https://randomuser.me/api/portraits/lego/6.jpg",
     "email": "emily.parker@example.com",
     "days_since_contact": 3,
     "status": "on-track",
@@ -74,7 +74,7 @@
   {
     "id": 7,
     "name": "Farhan Karim",
-    "picture": "https://randomuser.me/api/portraits/men/19.jpg",
+    "picture": "https://randomuser.me/api/portraits/lego/7.jpg",
     "email": "farhan.karim@example.com",
     "days_since_contact": 14,
     "status": "almost due",
@@ -86,11 +86,11 @@
   {
     "id": 8,
     "name": "Aisha Rahman",
-    "picture": "https://randomuser.me/api/portraits/women/12.jpg",
+    "picture": "https://randomuser.me/api/portraits/lego/8.jpg",
     "email": "aisha.rahman@example.com",
     "days_since_contact": 7,
     "status": "on-track",
-    "tags": ["family friend", "music"],
+    "tags": ["family"],
     "bio": "Family friend and talented pianist who often invites me to local live music performances.",
     "goal": 14,
     "next_due_date": "2025-07-21"

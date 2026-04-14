@@ -1,33 +1,49 @@
-import Image from "next/image";
-import Link from "next/link";
-import { FaChartLine } from "react-icons/fa";
-import { GoClock } from "react-icons/go";
-import { RiHome2Line } from "react-icons/ri";
+import { IoIosAdd } from "react-icons/io";
+import { MdAdd } from "react-icons/md";
+import Friends from "./components/navbar/Friends";
 
 export default function Home() {
-  return ( 
+  return (
     <>
-    <div className="flex flex-col flex-1 bg-zinc-50 font-sans dark:bg-black">
-      
-        
-      <div className="navbar bg-base-100 shadow-sm">
-  <div className="flex-1">
-    <a className="btn btn-ghost text-xl"> KeenKeeper </a>
-  </div>
-  <div className="flex-none ">
-    <ul className="menu menu-horizontal px-1 gap-2">
-      <li> <Link href='./'><RiHome2Line/>Home </Link> </li>
-      <li> <Link href='./timeline'> <GoClock/>Timeline </Link> </li>
-      <li> <Link href='./stats'><FaChartLine/> Stats </Link> </li>
-      
-    </ul>
-  </div>
-</div>
-        
-    
-    </div>
+      <div className="hero bg-base-200">
+        <div className="hero-content text-center">
+          <div className="max-w-md">
+            <h1 className="text-4xl font-bold">
+              Friends to keep close in your life
+            </h1>
+            <p className="py-6">
+              Your personal shelf of meaningful connections. Browse, tend, and
+              nurture the relationships that matter most.
+            </p>
+            <button className="btn btn-primary"> <MdAdd/> Add a Friend</button>
+          </div>
+        </div>
+      </div>
 
-     main page
-   </>
+      <div className="flex w-full gap-6">
+        <div className="card bg-base-300 rounded-box grid h-20 grow place-items-center">
+          {" "}
+          <h3 className="text-2xl font-semibold">10</h3> 10 friends
+        </div>
+
+        <div className="card bg-base-300 rounded-box grid h-20 grow place-items-center">
+          {" "}
+          <h3 className="text-2xl font-semibold">3</h3> On Trak
+        </div>
+        <div className="card bg-base-300 rounded-box grid h-20 grow place-items-center">
+          <h3 className="text-2xl font-semibold">6</h3> Need Attention
+        </div>
+        <div className="card bg-base-300 rounded-box grid h-20 grow place-items-center">
+          <h3 className="text-2xl font-semibold">12</h3> Interactions This Month
+        </div>
+      </div>
+
+    
+
+    <Friends></Friends>
+
+
+
+    </>
   );
 }
