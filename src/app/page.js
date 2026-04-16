@@ -1,6 +1,7 @@
 
 import { MdAdd } from "react-icons/md";
 import Friends from "./components/navbar/Friends";
+import TimelineCard from "./components/timelineCard/TimelineCard";
 
 const data = await fetch("https://b13-a7-keen-keeper-nine.vercel.app/friends.json");
 const friends = await data.json();
@@ -22,6 +23,10 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+
+        
+
 
       <div className="flex w-full gap-6">
         <div className="card bg-base-300 rounded-box grid h-20 grow place-items-center">

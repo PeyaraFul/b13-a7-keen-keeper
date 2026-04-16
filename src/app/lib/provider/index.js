@@ -1,6 +1,6 @@
 import React from 'react';
 
-const FriendDetails = ({params}) => {
+const index = () => {
     return (
         <div>
             
@@ -8,4 +8,4 @@ const FriendDetails = ({params}) => {
     );
 };
 
-export default FriendDetails;
+export default index;

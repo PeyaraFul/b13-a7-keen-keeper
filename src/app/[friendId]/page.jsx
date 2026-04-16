@@ -1,10 +1,14 @@
+// "use client";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
-import { FiPhoneCall } from "react-icons/fi";
-import { IoIosVideocam } from "react-icons/io";
+
 import { IoArchive, IoNotificationsOffSharp } from "react-icons/io5";
-import { LuMessageSquareText } from "react-icons/lu";
+
 import { RiDeleteBin6Line } from "react-icons/ri";
+import CallBtn from "../components/button/CallBtn";
+import TextBtn from "../components/button/TextBtn";
+import VideoBtn from "../components/button/VideoBtn";
 
 const FriendsDetails = async ({ params }) => {
   const { friendId } = await params;
@@ -14,8 +18,6 @@ const FriendsDetails = async ({ params }) => {
   );
   const friends = await data.json();
   // console.log(friendId)
-
-  // console.log(params)
 
   const selectivePerson = friends.find((person) => person.id == friendId);
 
@@ -60,7 +62,9 @@ const FriendsDetails = async ({ params }) => {
             {" "}
             {selectivePerson.status}{" "}
           </div>
-        </div>
+          <p> {selectivePerson.bio} </p>
+          <p>Preferred: {selectivePerson.email} </p>
+        </div> 
 
         
       </div>
@@ -101,13 +105,6 @@ const FriendsDetails = async ({ params }) => {
           
         </div>
 
-            
-
-
-
-
-
-
 
 
         <div className="card bg-base-300 rounded-box grid h-20 grow p-4">
@@ -119,15 +116,16 @@ const FriendsDetails = async ({ params }) => {
           <button className="btn w-20 absolute right-1 top-1">Edit</button>
         </div>
         <div className="card bg-base-300 rounded-box flex h-30 justify-between flex-row mt-3 p-5 gap-6">
-          <div className="card bg-green-500 rounded-box grid h-20 grow place-items-center content-center">
-            <FiPhoneCall className="text-3xl" /> Call
-          </div>
-          <div className="card bg-green-300 rounded-box grid h-20 grow place-items-center content-center">
-            <LuMessageSquareText className="text-3xl" /> Text
-          </div>
-          <div className="card bg-green-300 rounded-box grid h-20 grow place-items-center content-center">
-            <IoIosVideocam className="text-3xl" /> Video
-          </div>
+         
+         <CallBtn></CallBtn>
+         <TextBtn selectivePerson={selectivePerson} ></TextBtn>
+         <VideoBtn></VideoBtn>
+          
+         
+          
+
+          
+          
         </div>
 
             <div className="card bg-base-300 rounded-box flex h-90 justify-between flex-row mt-3 p-5 gap-6">
