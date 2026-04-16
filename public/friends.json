@@ -66,7 +66,7 @@
     "email": "emily.parker@example.com",
     "days_since_contact": 3,
     "status": "on-track",
-    "tags": ["book club", "creative"],
+    "tags": ["book club"],
     "bio": "Friend from our monthly book club who shares my love for mystery novels and writing workshops.",
     "goal": 14,
     "next_due_date": "June 17,2025"

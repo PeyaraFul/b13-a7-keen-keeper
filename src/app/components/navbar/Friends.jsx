@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -26,7 +26,7 @@ const Friends = ({friends}) => {
     <>
     <h1 className="text-md font-bold mt-10"> Your Friends</h1>
 
-     <div className="grid grid-cols-4 gap-6 my-4 mx-auto">
+     <div className="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 my-4 mx-auto">
         
       {friends.map((friend, index) => (
         

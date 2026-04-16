@@ -1,14 +1,10 @@
-// "use client";
+
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
-
 import { IoArchive, IoNotificationsOffSharp } from "react-icons/io5";
-
 import { RiDeleteBin6Line } from "react-icons/ri";
-import CallBtn from "../components/button/CallBtn";
 import TextBtn from "../components/button/TextBtn";
-import VideoBtn from "../components/button/VideoBtn";
+
 
 const FriendsDetails = async ({ params }) => {
   const { friendId } = await params;
@@ -38,19 +34,19 @@ const FriendsDetails = async ({ params }) => {
         <div className="card bg-base-100 shadow-sm border border-amber-600 rounded-2xl">
         <figure className="px-10 pt-10">
           <Image
-            src={selectivePerson.picture}
-            alt={selectivePerson.name}
+            src={selectivePerson?.picture}
+            alt={selectivePerson?.name}
             width="120"
             height="120"
             className="rounded-xl"
           />
         </figure>
         <div className="card-body items-center text-center">
-          <h2 className="card-title"> {selectivePerson.name} </h2>
-          <p> {selectivePerson.days_since_contact}d ago </p>
+          <h2 className="card-title"> {selectivePerson?.name} </h2>
+          <p> {selectivePerson?.days_since_contact}d ago </p>
 
           <div className="flex gap-5">
-            {selectivePerson.tags.map((tag, ind) => (
+            {selectivePerson?.tags.map((tag, ind) => (
               <div key={ind} className="badge badge-success">
                 {" "}
                 {tag}{" "}
@@ -58,12 +54,12 @@ const FriendsDetails = async ({ params }) => {
             ))}
           </div>
 
-          <div className={`badge ${statusBg(selectivePerson.status)} `}>
+          <div className={`badge ${statusBg(selectivePerson?.status)} `}>
             {" "}
-            {selectivePerson.status}{" "}
+            {selectivePerson?.status}{" "}
           </div>
-          <p> {selectivePerson.bio} </p>
-          <p>Preferred: {selectivePerson.email} </p>
+          <p> {selectivePerson?.bio} </p>
+          <p>Preferred: {selectivePerson?.email} </p>
         </div> 
 
         
@@ -85,20 +81,20 @@ const FriendsDetails = async ({ params }) => {
           <div className="card bg-base-300 rounded-box grid h-20 grow place-items-center">
             {" "}
             <h3 className="text-2xl font-semibold">
-              {selectivePerson.days_since_contact}
+              {selectivePerson?.days_since_contact}
             </h3>
             Days Since Contact
           </div>
 
           <div className="card bg-base-300 rounded-box grid h-20 grow place-items-center">
-            <h3 className="text-2xl font-semibold"> {selectivePerson.goal}</h3>{" "}
+            <h3 className="text-2xl font-semibold"> {selectivePerson?.goal}</h3>{" "}
             Goal (Days)
           </div>
 
           <div className="card bg-base-300 rounded-box grid h-20 grow place-items-center">
             <h3 className="text-2xl font-semibold">
               {" "}
-              {selectivePerson.next_due_date}
+              {selectivePerson?.next_due_date}
             </h3>{" "}
             Goal (Days)
           </div>
@@ -117,9 +113,9 @@ const FriendsDetails = async ({ params }) => {
         </div>
         <div className="card bg-base-300 rounded-box flex h-30 justify-between flex-row mt-3 p-5 gap-6">
          
-         {/* <CallBtn selectivePerson={selectivePerson}></CallBtn> */}
+        
          <TextBtn selectivePerson={selectivePerson} ></TextBtn>
-         {/* <VideoBtn selectivePerson={selectivePerson}></VideoBtn> */}
+       
           
          
           
