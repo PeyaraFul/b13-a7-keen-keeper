@@ -117,9 +117,9 @@ const FriendsDetails = async ({ params }) => {
         </div>
         <div className="card bg-base-300 rounded-box flex h-30 justify-between flex-row mt-3 p-5 gap-6">
          
-         <CallBtn></CallBtn>
+         {/* <CallBtn selectivePerson={selectivePerson}></CallBtn> */}
          <TextBtn selectivePerson={selectivePerson} ></TextBtn>
-         <VideoBtn></VideoBtn>
+         {/* <VideoBtn selectivePerson={selectivePerson}></VideoBtn> */}
           
          
           

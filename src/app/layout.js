@@ -18,16 +18,21 @@ export default function RootLayout({ children }) {
 
  
   return (
-    <html lang="en">
+    <html lang="en" data-theme='light'>
       
       <body className="min-h-full flex flex-col">
-  
-       <TextProvider>
+      
+      <TextProvider>
          <Navbar></Navbar>
+         <div className="mx-4 md:mx-20 lg:mx-40">
           {children}
+               </div>
        </TextProvider>
          
         <Footer></Footer>
+
+ 
+       
         </body>
       
 

@@ -1,7 +1,7 @@
 
 import { MdAdd } from "react-icons/md";
 import Friends from "./components/navbar/Friends";
-import TimelineCard from "./components/timelineCard/TimelineCard";
+
 
 const data = await fetch("https://b13-a7-keen-keeper-nine.vercel.app/friends.json");
 const friends = await data.json();

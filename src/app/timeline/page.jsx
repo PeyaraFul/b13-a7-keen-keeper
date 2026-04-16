@@ -26,15 +26,37 @@ const TimelinePage = () => {
             <IoCall />
         </div>
 
-            Timeline1:
+            <h1 className='text-4xl font-bold my-2'>Timeline1</h1>
              {message.map((theMan, ind) => (
 
-                <div key={ind} className="card bg-base-300 rounded-box grid h-20 grow items-center p-4">
+                <div key={ind} className="bg-base-300 rounded-box flex gap-4 my-4 shadow-md h-20 p-4">
           {" "}
-          <p className="text-xl font-semibold"> <strong>Metup</strong> with
-            <span >{theMan.person}</span>
-            </p> 
-            <p>  {months[theMan.month-1]} {theMan.day}, {theMan.year} </p>
+          
+        
+            <div>
+                { theMan.btnClicked === 'call' && (
+                <IoCall className='text-3xl mt-1'></IoCall>
+                )
+                }
+                { theMan.btnClicked === 'text' && (
+                    <LuMessageCircleMore className='text-3xl mt-1'></LuMessageCircleMore>
+                )
+                }
+                { theMan.btnClicked === 'video' && (
+                    <FaVideo className='text-3xl mt-1'></FaVideo>
+                )
+                }
+            </div>
+            
+
+            <div>
+                <p className="text-md font-semibold"> 
+                <strong> {theMan.btnClicked} </strong> with
+                <span > {theMan.person}</span>
+                </p> 
+                <p>  {months[theMan.month-1]} {theMan.day}, {theMan.year}  </p>
+            </div>
+              
         </div>
 
             ))}
