@@ -1,10 +1,11 @@
 
 import { MdAdd } from "react-icons/md";
-// import Friends from './components/navbar/Friends';
+import Friends from "./components/navbar/Friends";
+
 
 
 const data = await fetch("https://b13-a7-keen-keeper-nine.vercel.app/friends.json");
-const Friends = await data.json();
+const friends = await data.json();
 
 export default function Home() {
   return (

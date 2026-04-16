@@ -34,15 +34,15 @@ const TimelinePage = () => {
           
         
             <div>
-                { theMan.btnClicked === 'call' && (
+                { theMan.btnClicked === 'Call' && (
                 <IoCall className='text-3xl mt-1'></IoCall>
                 )
                 }
-                { theMan.btnClicked === 'text' && (
+                { theMan.btnClicked === 'Text' && (
                     <LuMessageCircleMore className='text-3xl mt-1'></LuMessageCircleMore>
                 )
                 }
-                { theMan.btnClicked === 'video' && (
+                { theMan.btnClicked === 'Video' && (
                     <FaVideo className='text-3xl mt-1'></FaVideo>
                 )
                 }

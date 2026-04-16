@@ -6,7 +6,7 @@
     "email": "john.doe@example.com",
     "days_since_contact": 18,
     "status": "overdue",
-    "tags": ["college", "close friend"],
+    "tags": ["college", "friend"],
     "bio": "Met during our computer science degree at university. We still go hiking together every winter.",
     "goal": 14,
     "next_due_date": "July 27,2025"

@@ -2,6 +2,7 @@ import "./globals.css";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/navbar/Footer";
 import TextProvider from "./components/context/TextContext";
+import { ToastContainer } from "react-toastify";
 
 export const metadata = {
   title: "Create Next App",
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
           <Navbar></Navbar>
           <div className="mx-4 md:mx-20 lg:mx-30">{children}</div>
         </TextProvider>
+        <ToastContainer position="top-center"></ToastContainer>
 
         <Footer></Footer>
       </body>
