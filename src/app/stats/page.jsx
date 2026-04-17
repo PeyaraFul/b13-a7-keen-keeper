@@ -1,13 +1,18 @@
 'use client'
-import React from 'react';
+import React, { useContext } from 'react';
 import { Pie, PieChart, Cell, Tooltip } from 'recharts';
+import { CountContext } from '../components/context/CountContext';
+
 
 const StatsPage = () => {
+  const {count} = useContext(CountContext)
+  
 
+  // console.log(call,text,video)
   const data = [
-  { name: 'Call', value: 20 },
-  { name: 'Text', value: 30 },
-  { name: 'Video', value: 10 },
+  { name: 'Call', value: count.call},
+  { name: 'Text', value: count.text},
+  { name: 'Video', value: count.video},
   ];
   const color = ['purple', 'green', 'red'] ;
     return (

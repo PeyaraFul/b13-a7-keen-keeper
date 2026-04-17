@@ -5,10 +5,14 @@ import { FaHandshakeSimple } from 'react-icons/fa6';
 import { LuMessageCircleMore } from 'react-icons/lu';
 import { FaVideo } from 'react-icons/fa';
 import { IoCall } from 'react-icons/io5';
+import StatsPage from '../stats/page';
+import { CountContext } from '../components/context/CountContext';
+import { useEffect } from "react";
 
 
 
 const TimelinePage = () => {
+        const {setCount} = useContext(CountContext) ;
       const  {message} = useContext(TextContext)
 
       const [visibleCard, setVisibleCard] = useState('None') ;
@@ -164,11 +168,17 @@ const TimelinePage = () => {
               
         </div>
     ))
-    // console.log(call) ;
+    // console.log(call.length) ;
   
+        
+        // set count of text call and video 
+    useEffect(() => {
+        setCount({text:text.length, call:call.length, video:video.length});
+            }, [text, call, video, setCount]);
 
-    
 
+
+        // console.log(setCount) ;
 
     return (
         <div>
@@ -181,8 +191,9 @@ const TimelinePage = () => {
         </div>
 
             <h1 className='text-4xl font-bold my-2'>Timeline1</h1>
-            {/* <DropDownMenu></DropDownMenu> */}
 
+
+            {/* <DropDownMenu></DropDownMenu> */}
             <select onChange={filterHandle} defaultValue='None' className="select mt-4">
                 <option value='None'>Filter Timeline</option>
                 <option value='Call'>Call</option>
@@ -209,7 +220,10 @@ const TimelinePage = () => {
             
             
                      
-            
+            <div className='hidden'>
+                <StatsPage text={text.length}  call={call.length} video={video.length} ></StatsPage>
+
+            </div>
         </div>
     );
 };

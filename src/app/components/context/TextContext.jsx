@@ -12,6 +12,8 @@ const TextProvider = ({children}) => {
              <TextContext value={{message, setMessage}}>
                 {children}
                  </TextContext>
+
+                 
         </>
     );
 };
