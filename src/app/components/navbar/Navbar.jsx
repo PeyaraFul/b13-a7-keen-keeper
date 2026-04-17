@@ -12,8 +12,10 @@ const Navbar = () => {
             <a className="btn btn-ghost text-xl"> KeenKeeper </a>
           </div>
 
+          {/* <div className="md:hidden "> */}
+            <NavLinks></NavLinks>
+          {/* </div> */}
           
-          <NavLinks></NavLinks>
 
         </div>
       </div>
