@@ -34,7 +34,7 @@ const Friends = ({friends}) => {
         
         <div className="card bg-base-100 shadow-sm border border-amber-600 rounded-2xl" >
           <figure className="px-10 pt-10">
-           <Image src={friend.picture} alt={friend.name} width='120' height='120' className="rounded-xl" />
+           <Image src={friend.picture} alt={friend.name} width={100} height={100} className="rounded-xl" />
           </figure>
           <div className="card-body items-center text-center">
             <h2 className="card-title"> {friend.name} </h2>

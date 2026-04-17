@@ -31,20 +31,20 @@ export default function Home() {
         
 
   {/* Dashboard section */}
-      <div className="flex w-full gap-6 mt-4">
-        <div className="card bg-base-300 rounded-box grid p-2 justify-center grow place-items-center">
+      <div className="flex flex-wrap w-full gap-6 mt-4">
+        <div className="card bg-base-300 rounded-box grid p-2 justify-center grow place-items-center mb-4">
           {" "}
-          <h3 className="text-2xl font-semibold">10</h3> 10 friends
+          <h3 className="text-2xl font-semibold">10</h3> friends
         </div>
 
-        <div className="card bg-base-300 rounded-box grid p-2 grow place-items-center">
+        <div className="card bg-base-300 rounded-box grid p-2 grow place-items-center mb-4">
           {" "}
           <h3 className="text-2xl font-semibold">3</h3> On Trak
         </div>
-        <div className="card bg-base-300 rounded-box grid p-2 grow place-items-center">
+        <div className="card bg-base-300 rounded-box grid p-2 grow place-items-center mb-4">
           <h3 className="text-2xl font-semibold">6</h3> Need Attention
         </div>
-        <div className="card bg-base-300 rounded-box grid p-2 grow place-items-center">
+        <div className="card bg-base-300 rounded-box grid p-2 grow place-items-center mb-4">
           <h3 className="text-2xl font-semibold">12</h3> Interactions This Month
         </div>
       </div>

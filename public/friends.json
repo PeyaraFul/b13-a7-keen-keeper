@@ -31,7 +31,7 @@
     "days_since_contact": 5,
     "status": "on-track",
     "tags": ["gym", "travel buddy"],
-    "bio": "We met at the local gym and now plan one international trip together every year.",
+    "bio": "We met at the local gym, now plan one international trip together.",
     "goal": 10,
     "next_due_date": "July 15,2025"
   },
@@ -43,7 +43,7 @@
     "days_since_contact": 20,
     "status": "overdue",
     "tags": ["school", "best friend"],
-    "bio": "My closest school friend since class eight; we usually catch up over long evening calls.",
+    "bio": "My closest school friend since class eight.",
     "goal": 15,
     "next_due_date": "Feb 27,2025"
   },
@@ -55,7 +55,7 @@
     "days_since_contact": 9,
     "status": "almost due",
     "tags": ["neighbor"],
-    "bio": "Neighbor and weekend football partner who organizes our local community matches.",
+    "bio": "Neighbor and weekend football partner who organizes matches.",
     "goal": 10,
     "next_due_date": "Feb 20,2025"
   },
@@ -67,7 +67,7 @@
     "days_since_contact": 3,
     "status": "on-track",
     "tags": ["book club"],
-    "bio": "Friend from our monthly book club who shares my love for mystery novels and writing workshops.",
+    "bio": "Friend from our book club who shares my love for mystery novels.",
     "goal": 14,
     "next_due_date": "June 17,2025"
   },
@@ -79,7 +79,7 @@
     "days_since_contact": 14,
     "status": "almost due",
     "tags": ["startup", "business"],
-    "bio": "Met at a startup networking event and now regularly exchange ideas about product design.",
+    "bio": "Met at a startup networking event and now regularly exchange ideas about design.",
     "goal": 16,
     "next_due_date": "July 05,2025"
   },
@@ -91,7 +91,7 @@
     "days_since_contact": 7,
     "status": "on-track",
     "tags": ["family"],
-    "bio": "Family friend and talented pianist who often invites me to local live music performances.",
+    "bio": "Family friend and talented pianist who often invites me to local party.",
     "goal": 14,
     "next_due_date": "July 10,2025"
   }

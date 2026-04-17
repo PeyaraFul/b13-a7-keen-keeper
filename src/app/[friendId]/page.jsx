@@ -34,9 +34,9 @@ const FriendsDetails = async ({ params }) => {
             <Image
               src={selectivePerson?.picture}
               alt={selectivePerson?.name}
-              width="120"
-              height="120"
-              className="rounded-xl"
+              width={100}
+              height={100}
+              className="rounded-full border border-green-200"
             />
           </figure>
           <div className="card-body items-center text-center">
@@ -113,9 +113,7 @@ const FriendsDetails = async ({ params }) => {
           </div>
         </div>
 
-        <div className="card bg-base-300 rounded-box flex h-90 justify-between flex-row mt-3 p-5 gap-6">
-          <h3>Recent Interaction</h3>
-        </div>
+        
       </div>
     </div>
   );
