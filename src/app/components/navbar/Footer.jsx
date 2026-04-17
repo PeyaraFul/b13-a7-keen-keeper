@@ -16,7 +16,7 @@ const Footer = () => {
         </aside>
 
         <nav className="text-center mt-6">
-          <h3 >Social Link</h3>
+          <h3>Social Link</h3>
           <div className="flex justify-center gap-4 mt-1">
             <Link href="./">
               {" "}
@@ -43,10 +43,18 @@ const Footer = () => {
           </div>
           <div>
             <ul className="flex gap-4">
-              <li> <Link href='/'>Privacy Policy </Link> </li>
-              <li> <Link href='/'>Terms of Service </Link> </li>
-              <li> <Link href='/'>Cookies </Link> </li>
-              
+              <li>
+                {" "}
+                <Link href="/">Privacy Policy </Link>{" "}
+              </li>
+              <li>
+                {" "}
+                <Link href="/">Terms of Service </Link>{" "}
+              </li>
+              <li>
+                {" "}
+                <Link href="/">Cookies </Link>{" "}
+              </li>
             </ul>
           </div>
         </div>

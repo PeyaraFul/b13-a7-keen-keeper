@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+#  Keeper Timeline App
 
-## Getting Started
+##  Project Name
+KeenKeeper (Friendship Activity Tracker web)
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+##  Description
+This is a web application that allows users to track and manage interactions such as Calls, Texts, and Video activities.
+It displays all activities in timelineTab and provides. Users can easily see activities on pieChart.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+##  Technologies Used
+ Next.js (App Router)
+ React.js
+ JavaScript
+ Tailwind CSS
+ React Icons
+ DaisyUI
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+##  Key Features
 
-## Deploy on Vercel
+###  1. Activity Timeline
+ It shows all user interactions in timelineTab
+ Shows person name, activity type and date also
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+###  2. Filtering System
+ Filter activities by:
+   Call
+   Text
+   Video 
+   Instant UI updates without page reload
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+###  3. Analytics Chart
+  shows activities as a well and mordern Pie chart
+
+
+
+
+##  Live Link
+https://b13-a7-keen-keeper-nine.vercel.app/
+## Repo
+https://github.com/PeyaraFul/b13-a7-keen-keeper

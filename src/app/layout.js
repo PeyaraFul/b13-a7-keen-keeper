@@ -14,24 +14,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" data-theme="light">
       <body className="min-h-full flex flex-col">
-         <CountProvider>
-        <TextProvider>
-          <Navbar></Navbar>
-          
-                
-          <div className="mx-4 md:mx-20 lg:mx-30">
-            
-           
-            {children} 
-            
+        <CountProvider>
+          <TextProvider>
+            <Navbar></Navbar>
 
-          </div>
-
-            
-         
-          
-        </TextProvider>
-         </CountProvider>
+            <div className="mx-4 md:mx-20 lg:mx-30">{children}</div>
+          </TextProvider>
+        </CountProvider>
         <ToastContainer position="top-center"></ToastContainer>
 
         <Footer></Footer>

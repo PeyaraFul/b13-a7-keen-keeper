@@ -104,7 +104,6 @@ const FriendsDetails = async ({ params }) => {
           <button className="btn w-20 absolute right-1 top-1">Edit</button>
         </div>
 
-
         {/* call, text and video button */}
         <div className="card bg-base-300 rounded-box mt-3 p-5">
           <h2 className="text-lg font-semibold -mt-2">Quick Check-In</h2>
@@ -112,8 +111,6 @@ const FriendsDetails = async ({ params }) => {
             <Btn selectivePerson={selectivePerson}></Btn>
           </div>
         </div>
-
-        
       </div>
     </div>
   );

@@ -3,62 +3,59 @@
 import Image from "next/image";
 import Link from "next/link";
 
-
 // console.log(friends) ;
 
-const Friends = ({friends}) => {
-
-    const statusBg = (status) => {
-        if(status === 'overdue'){
-            return 'bg-red-500' ;
-        }
-        if(status === 'almost due'){
-            return 'bg-amber-500' ;
-        }
-        else{
-            return 'bg-green-800' ;
-        }
+const Friends = ({ friends }) => {
+  const statusBg = (status) => {
+    if (status === "overdue") {
+      return "bg-red-500";
     }
-
-    
+    if (status === "almost due") {
+      return "bg-amber-500";
+    } else {
+      return "bg-green-800";
+    }
+  };
 
   return (
     <>
-    <h1 className="text-md font-bold mt-10"> Your Friends</h1>
+      <h1 className="text-md font-bold mt-10"> Your Friends</h1>
 
-     <div className="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 my-4 mx-auto">
-        
-      {friends.map((friend, index) => (
-        
-        <Link key={index} href={`/${friend.id}`}>
-        
-        <div className="card bg-base-100 shadow-sm border border-amber-600 rounded-2xl" >
-          <figure className="px-10 pt-10">
-           <Image src={friend.picture} alt={friend.name} width={100} height={100} className="rounded-xl" />
-          </figure>
-          <div className="card-body items-center text-center">
-            <h2 className="card-title"> {friend.name} </h2>
-            <p> {friend.days_since_contact}d ago </p>
+      <div className="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 my-4 mx-auto">
+        {friends.map((friend, index) => (
+          <Link key={index} href={`/${friend.id}`}>
+            <div className="card bg-base-100 shadow-sm border border-amber-600 rounded-2xl">
+              <figure className="px-10 pt-10">
+                <Image
+                  src={friend.picture}
+                  alt={friend.name}
+                  width={100}
+                  height={100}
+                  className="rounded-xl"
+                />
+              </figure>
+              <div className="card-body items-center text-center">
+                <h2 className="card-title"> {friend.name} </h2>
+                <p> {friend.days_since_contact}d ago </p>
 
-             <div className="flex gap-5">
-             {friend.tags.map((tag, ind) =>
-              
-                <div key={ind} className='badge badge-success' > {tag} </div>
-                 ) } 
-                 </div>
+                <div className="flex gap-5">
+                  {friend.tags.map((tag, ind) => (
+                    <div key={ind} className="badge badge-success">
+                      {" "}
+                      {tag}{" "}
+                    </div>
+                  ))}
+                </div>
 
-
-            <div className={`badge ${statusBg(friend.status)} `}> {friend.status} </div>
-            
-          </div>
-        </div>
-        </Link>
-
-      ))}
-    </div>
-  
-
-
+                <div className={`badge ${statusBg(friend.status)} `}>
+                  {" "}
+                  {friend.status}{" "}
+                </div>
+              </div>
+            </div>
+          </Link>
+        ))}
+      </div>
     </>
   );
 };

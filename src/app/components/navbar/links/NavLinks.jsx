@@ -47,7 +47,6 @@ const NavLinks = () => {
         </ul>
       </div>
 
-
       {/* dropdown menu */}
       <div className="dropdown ?block md:hidden mr-10">
         <div tabIndex={0} role="button" className="btn m-1">

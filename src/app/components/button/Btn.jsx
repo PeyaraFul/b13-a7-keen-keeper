@@ -11,7 +11,7 @@ const Btn = ({ selectivePerson }) => {
   const { setMessage } = useContext(TextContext);
 
   const handleAction = (btnType) => {
-    const btnClicked = btnType; 
+    const btnClicked = btnType;
     const yy = new Date().getFullYear();
     const mm = new Date().getMonth();
     const dd = new Date().getDay();
